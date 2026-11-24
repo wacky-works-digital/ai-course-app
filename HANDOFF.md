@@ -27,11 +27,23 @@ Finding: the price IDs in the Vercel env (`price_1SX…FaWAVKdu3u…`) do not
 exist in the live Stripe account (`resource_missing`), so live checkout was
 already broken; they belong to another Stripe account or test mode.
 
-## Supabase backup (open)
+## Supabase backup (done 24-Nov-26, Saby approved)
 
-The paused project offers **Download backups → Database backup (PG 17.6.1.044)**
-and **Storage objects**. Not downloaded yet: awaiting Saby's OK. Save to
-`W:\archives\ai-course-app\2026-11-24-supabase\` (outside git).
+Saved outside git to `W:\archives\ai-course-app\2026-11-24-supabase\`:
+
+- `db_cluster-10-08-2026@02-26-30.backup.gz` (515 KB): the last backup before
+  Supabase paused the project, taken 10 Aug 2026. `gzip -t` passes.
+- `ylunzqegctexvatirpmx.storage.zip` (267 KB): 2 certificate PNGs. Zip test passes.
+- `SHA256SUMS.txt` holds the checksums.
+
+Contents (row counts): users 9, user_profiles 18, user_progress 63,
+certificates 2, feedback 2, release_notes 12, purchases 3. It contains
+personal data and password hashes: keep it private and never commit it.
+
+**For Saby to check:** `purchases` has 3 rows with status `paid` (one at 0,
+two at 1900 in minor units). Confirm they were test or partner purchases
+before stage 2.
+
 The Supabase org dashboard also shows an "Outstanding invoices" banner.
 
 ## Stage 2 — after about 24 December 2026, each item needs Saby's explicit OK
@@ -45,5 +57,5 @@ The Supabase org dashboard also shows an "Outstanding invoices" banner.
 
 ## Next steps
 
-1. Saby: Supabase steps above.
+1. Saby: confirm the 3 `paid` purchase rows were tests; check the Supabase invoices banner.
 2. Around 24-Dec-26: review stage 2 with Saby.
