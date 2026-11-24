@@ -2,7 +2,8 @@
 
 ## Retirement (Saby decision 24-Nov-26) — see HANDOFF.md
 
-- [ ] **Saby:** confirm the 3 `paid` rows in the backed-up `purchases` table were tests. The backup is saved in `W:\archives\ai-course-app\2026-11-24-supabase\`.
+- [ ] **Saby:** was Stripe charge `ch_3SaJjvFDt9aGqs930iVHTNBn` (£19, 3 Dec 2025, hotmail.com, initials S.D.) your own test? If not, decide on a refund. The backup is saved in `W:\archives\ai-course-app\2026-11-24-supabase\`.
+- [ ] **Saby:** pay or dispute the Supabase invoice EWIAZG-00011 ($41.61, 25 Jul 2026).
 - [ ] **Stage 2, ~24-Dec-26, each item needs Saby's OK:** delete Supabase project, Stripe product/webhook, Vercel project and `courses.wearewacky.com` DNS; remove app secrets (keep the shared live Stripe key); archive the GitHub repo.
 
 The Node.js preflight below is moot while the app is offline; do not redeploy to apply it.

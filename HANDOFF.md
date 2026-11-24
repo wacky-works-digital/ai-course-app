@@ -40,11 +40,16 @@ Contents (row counts): users 9, user_profiles 18, user_progress 63,
 certificates 2, feedback 2, release_notes 12, purchases 3. It contains
 personal data and password hashes: keep it private and never commit it.
 
-**For Saby to check:** `purchases` has 3 rows with status `paid` (one at 0,
-two at 1900 in minor units). Confirm they were test or partner purchases
-before stage 2.
+**Purchases checked 24-Nov-26:** `purchases` has 3 `paid` rows: free (0) on
+2 Dec 2025, "unknown" price at 1900 on 2 Dec 2025, and `live_gbp_partner` at
+1900 on 3 Dec 2025. Stripe shows exactly **one real live charge**:
+`ch_3SaJjvFDt9aGqs930iVHTNBn`, £19.00, 3 Dec 2025 17:21 UTC, succeeded, not
+refunded, a hotmail.com address (initials S.D.). **Saby to confirm whether
+it was their own test.** If it was a real buyer who was promised lifetime
+access, decide whether to refund before stage 2. No refund has been issued.
 
-The Supabase org dashboard also shows an "Outstanding invoices" banner.
+Supabase org "Wacky Works Digital" (free plan) has one **outstanding invoice:
+$41.61, 25 Jul 2026, EWIAZG-00011**. Saby to pay or dispute it.
 
 ## Stage 2 — after about 24 December 2026, each item needs Saby's explicit OK
 
