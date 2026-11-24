@@ -53,6 +53,9 @@ $41.61, 25 Jul 2026, EWIAZG-00011**. Saby to pay or dispute it.
 
 ## Stage 2 — after about 24 December 2026, each item needs Saby's explicit OK
 
+Saby confirmed on 24-Nov-26: keep the 30-day window. Do not start deletions
+before about 24-Dec-26.
+
 - [ ] Delete the Supabase project (only after a backup exists or Saby confirms none is needed).
 - [ ] Delete the Stripe product `prod_TXO1KccvCGLn9u` and webhook `we_1SaJPSFDt9aGqs93wYHf6dwf` (or leave archived).
 - [ ] Revoke/rotate keys this app held: the live Stripe secret key is **shared with other WWD apps** — do not revoke it, instead remove it from this Vercel project's env; remove `STRIPE_WEBHOOK_SECRET`, `SUPABASE_SECRET_KEY`, `AUTH_SECRET`; delete the Google OAuth client used here.
