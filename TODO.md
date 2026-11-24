@@ -2,7 +2,7 @@
 
 ## Retirement (Saby decision 24-Nov-26) — see HANDOFF.md
 
-- [ ] **Saby:** sign in to Supabase, back up project `ylunzqegctexvatirpmx` to `W:\archives\ai-course-app\` (outside git) if it still exists, then pause it.
+- [ ] Download the paused Supabase project's database backup (and storage objects) to `W:rchivesi-course-app\` (outside git) once Saby approves. The project is already paused.
 - [ ] **Stage 2, ~24-Dec-26, each item needs Saby's OK:** delete Supabase project, Stripe product/webhook, Vercel project and `courses.wearewacky.com` DNS; remove app secrets (keep the shared live Stripe key); archive the GitHub repo.
 
 The Node.js preflight below is moot while the app is offline; do not redeploy to apply it.
