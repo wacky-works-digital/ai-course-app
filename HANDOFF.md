@@ -65,5 +65,6 @@ before about 24-Dec-26.
 
 ## Next steps
 
-1. Saby: confirm the 3 `paid` purchase rows were tests; check the Supabase invoices banner.
-2. Around 24-Dec-26: review stage 2 with Saby.
+1. Saby: was the £19 charge `ch_3SaJjvFDt9aGqs930iVHTNBn` a test? If not, decide on a refund.
+2. Saby: pay or dispute Supabase invoice EWIAZG-00011 ($41.61).
+3. Around 24-Dec-26: review stage 2 with Saby (30-day window confirmed).
