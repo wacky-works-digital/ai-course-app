@@ -31,7 +31,7 @@ already broken; they belong to another Stripe account or test mode.
 
 The paused project offers **Download backups → Database backup (PG 17.6.1.044)**
 and **Storage objects**. Not downloaded yet: awaiting Saby's OK. Save to
-`W:rchivesi-course-app6-11-24-supabase\` (outside git).
+`W:\archives\ai-course-app\2026-11-24-supabase\` (outside git).
 The Supabase org dashboard also shows an "Outstanding invoices" banner.
 
 ## Stage 2 — after about 24 December 2026, each item needs Saby's explicit OK
